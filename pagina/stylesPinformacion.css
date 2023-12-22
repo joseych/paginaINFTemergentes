@@ -1,0 +1,124 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #3498db, #e74c3c);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(253, 249, 249);
+}
+
+section {
+    background-color: rgba(68, 50, 50, 0);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #fdf8f8;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #da5a3b;
+    color: rgb(100, 60, 60);
+    text-align: center;
+    padding: 10px;
+}
+/* Estilos para el carrusel */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: center;
+    background: linear-gradient(to bottom, #3498db, #e74c3c); /* Fondo degradado azul y rojo para el carrusel */
+}
+
+.slide {
+    float: left;
+    width: 100%;
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para los botones de navegación (opcional) */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+/* Estilo base para el carrusel */
+.carousel {
+    width: 100%; /* Tamaño completo del carrusel */
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.carousel img {
+    max-width: 100%; /* Asegura que la imagen no se desforme */
+    max-height: 100%; /* Asegura que la imagen no se desforme */
+}
+
+/* Contenedor de las imágenes */
+.carousel-content {
+    display: flex;
+    /* Margen negativo para mostrar todas las imágenes */
+    margin-left: -100%; /* Ajusta este valor según la cantidad de imágenes */
+    animation: carousel-animation 10s linear infinite; /* Ajusta la duración */
+}
+
+/* Estilo para las imágenes */
+.carousel-content img {
+    width: 100%;
+    height: auto;
+}
+
+/* Animación del carrusel */
+@keyframes carousel-animation {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
